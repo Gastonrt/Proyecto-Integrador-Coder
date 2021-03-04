@@ -1,0 +1,21 @@
+/* BASES */
+@import "../base/reseteo";
+@import "../base/variables";
+@import "../base/fonts";
+
+/* COMPONENTS */
+@import "../components/body";
+@import "../components/main-video";
+@import "../components/main-quienes";
+@import "../components/main-servicios";
+@import "../components/main-portfolio";
+@import "../components/main-form";
+@import "../components/main-qr-insta";
+@import "../components/main-iframe-maps";
+@import "../components/footer-social-media";
+@import "../components/footer-menu";
+
+/* Transiciones */
+@import "../transiciones/transicion";
+/* Queries */
+@import "../queries/media-queries";

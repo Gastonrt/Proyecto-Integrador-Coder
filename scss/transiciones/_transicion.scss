@@ -1,0 +1,28 @@
+/* Mini Sección: Transiciones */
+.caja1 {
+    -webkit-transition: $t1s;
+    transition:$t1s;
+
+    &:hover {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.caja2 {
+    -webkit-transition: $t1s;
+    transition: $t1s;
+
+    &:hover {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+}
+.caja3 {
+    -webkit-transition: $t1s;
+    transition: $t1s;
+
+    &:hover {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+    }
+}

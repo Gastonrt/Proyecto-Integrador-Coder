@@ -1,0 +1,30 @@
+/* Main: Servicios */
+.titulo-servicios {
+    h2 {
+        padding-top: 65px;
+        padding-bottom: 15px;
+    }
+}
+
+.flex-container {
+    display: $flex-box;
+    justify-content: $centerbt;
+
+    .flex-item {
+        flex-wrap: wrap;
+        justify-content: $centerbt;
+    }
+
+    img {
+        height: 150px;
+    }
+
+    h2:hover {
+        color: $color1;
+    }
+
+}
+
+.container-transicion {
+    position: relative;
+}

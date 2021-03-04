@@ -1,0 +1,47 @@
+/* Footer: Menú Nav Flex */
+footer {
+    section {
+
+        .contenedor-menu-2 {
+            display: $flex-box;
+            width: 100%;
+            flex-wrap: wrap;
+            background-color: #666666;
+            justify-content: center;
+            text-align: center;
+        
+            .listado-menu2 {
+
+                nav {
+                    display: $flex-box;
+
+                    ul {
+                        display: $flex-box;
+                        flex-wrap: wrap;
+
+                        li {
+                            display: $flex-box;
+                            list-style-type: none;
+
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                margin-left: 20px;
+                                text-align: center;
+                                justify-content: center;
+                                align-content: center;
+
+                                &:hover {
+                                    color: $color1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+                            
