@@ -17,42 +17,52 @@
 body {
   font-family: "Roboto", "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
+  color: black;
 }
 body h1 {
   font-weight: 400;
 }
+body h1 p {
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
 /* Main: Video */
-.flex-container-ab {
+.mi-contenedor {
   display: flex;
-  background-color: rgba(71, 163, 99, 0.781);
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
-  padding-right: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  height: 100vh;
 }
 
 .flex-item-a > .video2 {
-  width: 450px;
-  padding-left: 110px;
-  padding-top: 50px;
-  padding-right: 150px;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 40%;
 }
 
 .flex-item-b {
-  justify-content: flex-end;
-  background-color: white;
-  width: 600px;
-  margin: 10px;
-  text-align: center;
-  font-size: 20px;
-  flex: 1;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: auto;
 }
 
 /* Main: quienes somos, filosofia */
-#filosofia,
-#quienes {
+.contenedor-identidad {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#quienes, #filosofia {
   padding-top: 55px;
+  background-color: #acdeaa;
 }
 
 /* Main: Servicios */
@@ -61,19 +71,25 @@ body h1 {
   padding-bottom: 15px;
 }
 
+#servicios {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #fed049;
+}
+
 .flex-container {
   display: flex;
   justify-content: space-between;
 }
 .flex-container .flex-item {
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
-.flex-container img {
-  height: 150px;
+.flex-container .flex-item img {
+  height: 125px;
 }
-.flex-container h2:hover {
-  color: #f05d21;
+.flex-container .flex-item imgh2:hover {
+  color: #168124;
 }
 
 .container-transicion {
@@ -81,25 +97,12 @@ body h1 {
 }
 
 /* Sección Portafolio */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 15px;
-  justify-items: center;
-  align-items: center;
-  background-color: #c7c8ca;
-  padding: 65px 65px;
+#portafolio {
+  padding-top: 65px;
 }
-.grid-container .grid-item1 {
-  background: #f05d21;
-  text-align: center;
-  border: black 5px solid;
-  width: 100px;
-  height: 100px;
-}
-.grid-container .grid-item1 img,
-.grid-container .grid-item1 video {
-  inline-size: 100%;
+
+.ta_1 {
+  width: 250px;
 }
 
 /* Main: Formulario Breve */
@@ -109,7 +112,7 @@ body h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1f4c799b;
+  background-color: #8fbbaf;
 }
 .estilos-form h2 {
   padding-top: 65px;
@@ -118,7 +121,7 @@ body h1 {
 }
 .estilos-form h2 .speaker-form-header {
   text-align: center;
-  background-color: #1f4c799b;
+  background-color: #acdeaa;
   border: 1px solid #d6d9dc;
   border-radius: 3px;
   width: 600px;
@@ -166,15 +169,16 @@ body h1 {
 .form-row button {
   font-size: 16px;
   font-weight: bold;
-  color: #f05d21;
+  color: #d6f8b8;
   background-color: black;
   border: none;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 /* Qr Instagram */
 .qr-background {
-  background-color: #f05d21;
+  background-color: #acdeaa;
 }
 .qr-background .qr-insta {
   width: 300px;
@@ -202,7 +206,7 @@ footer section .contenedor-menu-2 {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  background-color: #666666;
+  background-color: #168124;
   justify-content: center;
   text-align: center;
 }
@@ -226,7 +230,7 @@ footer section .contenedor-menu-2 .listado-menu2 nav ul li a {
   align-content: center;
 }
 footer section .contenedor-menu-2 .listado-menu2 nav ul li a:hover {
-  color: #f05d21;
+  color: #acdeaa;
 }
 
 /* Transiciones */
@@ -260,99 +264,259 @@ footer section .contenedor-menu-2 .listado-menu2 nav ul li a:hover {
 
 /* Queries */
 /* Sección Media Queries */
-/* ----------- iPhone 4 and 4S ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  img {
-    display: none;
+/*RESPONSIVE*/
+@media (min-width: 1199px) {
+  .video2 {
+    margin-top: 6rem;
   }
 }
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  img {
-    display: none;
+@media (min-width: 576px) and (max-width: 1199px) {
+  .navbar-expand-lg {
+    justify-content: center;
+  }
+
+  section .carousel-index .carousel-item .carousel-texto {
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-bottom: auto;
+    padding: 2rem 3rem 2rem 3rem;
+  }
+
+  .sobremi-index {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .sobremi-index .sobremi-index-texto {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .sobremi-index .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .sobremi {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .sobremi .sobremi-texto {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .sobremi .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .sobremi .sobremi-imagen {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .servicios {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .galeria .card-body .overlay-portfolio:hover .card-title {
+    margin-top: 6rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
   }
 }
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  img {
+@media (max-width: 991px) {
+  .navbar-expand-lg {
+    justify-content: space-between;
+  }
+
+  .navbar .navbar-nav .btn {
+    display: flex;
+    justify-content: start;
+  }
+
+  section .carousel-index .carousel-item .carousel-texto {
+    height: auto;
+    margin-bottom: auto;
+    padding: 2rem 3rem 2rem 3rem;
+  }
+
+  section .carousel-index .carousel-item .carousel-texto p {
     display: none;
   }
-}
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  img {
-    display: none;
+
+  .container .ideas-index .card-deck {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .container .ideas-index .card-deck .col-sm-4 {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .combos .card-group .card-deck .card .overlay-index:hover .texto-combo-hover {
+    margin-top: 6rem;
+  }
+
+  .row-habilidades {
+    flex-direction: column;
+  }
+
+  .col-6-habilidades-right {
+    max-width: 100%;
+  }
+
+  .col-4-habilidades-left {
+    max-width: 60%;
+    margin: auto;
+  }
+
+  .press-online {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .press-online .press-online-texto .card-press-online {
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .galeria .card-body .overlay-portfolio:hover .card-title {
+    margin-top: 0rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+  }
+
+  .galeria .card-body .overlay-portfolio:hover .card-text {
+    font-size: 0.8rem;
+  }
+
+  .modal-cckonex .modal-body .texto-modal .number-two {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .modal-cckonex .modal-body .texto-modal .text-two {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .modal-cckonex .modal-body .texto-modal .number-three {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .modal-cckonex .modal-body .texto-modal .text-three {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 }
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  img {
-    display: none;
+@media (min-width: 991px) {
+  .navbar-expand-lg {
+    justify-content: space-between;
+  }
+
+  .combos .card-group .card-deck .card .overlay-index:hover .texto-combo-hover {
+    margin-top: 8rem;
   }
 }
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  img {
-    display: none;
+@media (max-width: 767px) {
+  .bg-color {
+    position: absolute;
+  }
+
+  .bg-color .navbar-expand-lg {
+    justify-content: center;
+  }
+
+  .ideas-index .card-deck {
+    flex-direction: column;
+  }
+
+  .ideas-index .card-deck .col-sm-4 {
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+
+  .combos .card-group .card-deck {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .combos .card-group .card-deck .card {
+    margin-bottom: 1rem;
+  }
+
+  .combos .card-group .card-deck .card .overlay-index:hover .texto-combo-hover {
+    margin-top: 15rem;
+  }
+
+  .servicios {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .container-form .flex-form-contacto {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .habilidades-right .card-deck {
+    flex-direction: row;
+  }
+
+  .galeria .card-body .overlay-portfolio:hover .card-title {
+    margin-top: 12rem;
+    margin-bottom: 0.2rem;
+    font-size: 2rem;
+  }
+
+  .galeria .card-body .overlay-portfolio:hover .card-text {
+    font-size: 1.2rem;
   }
 }
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  .flex-container-ab {
-    display: none;
+@media (min-width: 768px) {
+  .sobremi-index .col-md-8 {
+    max-width: 100%;
   }
 }
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  img {
-    display: none;
+@media (max-width: 576px) {
+  .row-habilidades .habilidades-right .card-deck .card-habilidades {
+    width: auto;
   }
-}
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  img {
-    display: none;
+
+  .combos .card-group .card-deck {
+    flex-direction: column;
+    max-width: 100%;
   }
-}
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  img {
-    display: none;
+
+  .combos .card-group .card-deck .card {
+    margin-bottom: 1rem;
   }
-}
-/* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  img {
-    display: none;
+
+  .combos .card-group .card-deck .card:hover .overlay-index:hover .texto-combo-hover {
+    margin-top: 8rem;
   }
-}
-/* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  img {
-    display: none;
-  }
-}
-/* ----------- iPhone X ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  img {
-    display: none;
-  }
-}
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  img {
-    display: none;
-  }
-}
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  img {
-    display: none;
+
+  .galeria .card-body .overlay-portfolio:hover .card-title {
+    margin-top: 12rem;
+    margin-bottom: 0.2rem;
   }
 }
 

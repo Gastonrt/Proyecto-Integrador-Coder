@@ -2,6 +2,8 @@
 @import "../base/reseteo";
 @import "../base/variables";
 @import "../base/fonts";
+// * MIXINS
+@import "../base/mixins";
 
 /* COMPONENTS */
 @import "../components/body";
@@ -14,6 +16,8 @@
 @import "../components/main-iframe-maps";
 @import "../components/footer-social-media";
 @import "../components/footer-menu";
+
+
 
 /* Transiciones */
 @import "../transiciones/transicion";

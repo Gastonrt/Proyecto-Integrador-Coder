@@ -1,23 +1,8 @@
 /* Sección Portafolio */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 15px;
-    justify-items: center;
-    align-items: center;
-    background-color: #c7c8ca;
-    padding: 65px 65px;
+#portafolio {
+    padding-top: 65px;
+}
 
-    .grid-item1 {
-        background: $color1;
-        text-align: center;
-        border: black 5px solid;
-        width: 100px;
-        height: 100px;
-
-        img,
-        video {
-            inline-size: 100%;
-        }
-    }
+.ta_1 {
+    width: 250px;
 }

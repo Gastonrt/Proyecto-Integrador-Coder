@@ -5,7 +5,7 @@
     display: $flex-box;
     flex-direction: column;
     align-items: center;
-    background-color: #1f4c799b;
+    background-color: $color3;
     
 
     h2 {
@@ -15,7 +15,7 @@
 
         .speaker-form-header {
             text-align: center;
-            background-color: #1f4c799b;
+            background-color: $color2;
             border: 1px solid #d6d9dc;
             border-radius: 3px;
             width: 600px;
@@ -77,4 +77,5 @@
     background-color: black;
     border: none;
     cursor: pointer;
+    margin-bottom: 5px;
 }

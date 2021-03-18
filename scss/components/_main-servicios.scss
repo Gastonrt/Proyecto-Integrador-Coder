@@ -1,28 +1,35 @@
 /* Main: Servicios */
+
 .titulo-servicios {
     h2 {
         padding-top: 65px;
         padding-bottom: 15px;
     }
 }
-
+#servicios {
+    @include margenes;
+    background-color: $color5;
+                           
+}
 .flex-container {
     display: $flex-box;
     justify-content: $centerbt;
+    
 
     .flex-item {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: $centerbt;
-    }
+   
 
     img {
-        height: 150px;
-    }
+        height: 125px;
+   
 
-    h2:hover {
-        color: $color1;
-    }
-
+    &h2:hover {
+        color: $color4;
+         }
+        }
+    } 
 }
 
 .container-transicion {

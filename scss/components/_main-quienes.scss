@@ -1,5 +1,16 @@
 /* Main: quienes somos, filosofia */
-#filosofia,
-#quienes {
-    padding-top: 55px;
+
+.contenedor-identidad {
+    @include margenes; 
 }
+
+
+#quienes, #filosofia {
+    padding-top: 55px;
+    background-color: $color2;
+    
+}
+
+
+    
+    

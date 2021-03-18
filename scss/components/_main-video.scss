@@ -1,26 +1,28 @@
 /* Main: Video */
-.flex-container-ab {
-    display: $flex-box;
-    background-color: rgba(71, 163, 99, 0.781);
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding-right: 150px;
+
+.mi-contenedor {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:stretch;
+    align-content:center;
+    height:100vh;
 }
+
 
 .flex-item-a > .video2 {
-    width: 450px;
-    padding-left: 110px;
-    padding-top: 50px;
-    padding-right: 150px;
-}
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:40%;
+    }
 
 .flex-item-b {
-    justify-content: flex-end;
-    background-color: white;
-    width: 600px;
-    margin: 10px;
-        text-align: center;
-    font-size: 20px;
-    flex: 1;
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
 }
