@@ -1,37 +1,19 @@
 /* Main: Servicios */
-
-.titulo-servicios {
-    h2 {
-        padding-top: 65px;
-        padding-bottom: 15px;
-    }
-}
-#servicios {
+.mi-container {
     @include margenes;
-    background-color: $color5;
+}
+
+
+
+#servicios {
+        background-color: $color5;
                            
 }
-.flex-container {
-    display: $flex-box;
-    justify-content: $centerbt;
+
+
+
+
+
     
-
-    .flex-item {
-        flex-wrap: nowrap;
-        justify-content: $centerbt;
-   
-
-    img {
-        height: 125px;
-   
-
-    &h2:hover {
-        color: $color4;
-         }
-        }
-    } 
-}
-
-.container-transicion {
-    position: relative;
-}
+        
+    

@@ -1,6 +1,10 @@
 /* Sección Portafolio */
 #portafolio {
-    padding-top: 65px;
+    padding-top: 85px;
+}
+
+.mis-margenes {
+    @include margenes;
 }
 
 .ta_1 {

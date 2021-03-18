@@ -19,10 +19,7 @@ body {
   text-align: center;
   color: black;
 }
-body h1 {
-  font-weight: 400;
-}
-body h1 p {
+body p {
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -55,50 +52,31 @@ body h1 p {
 }
 
 /* Main: quienes somos, filosofia */
-.contenedor-identidad {
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
 #quienes, #filosofia {
   padding-top: 55px;
   background-color: #acdeaa;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* Main: Servicios */
-.titulo-servicios h2 {
-  padding-top: 65px;
-  padding-bottom: 15px;
+.mi-container {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 #servicios {
-  margin-left: 40px;
-  margin-right: 40px;
   background-color: #fed049;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-}
-.flex-container .flex-item {
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-.flex-container .flex-item img {
-  height: 125px;
-}
-.flex-container .flex-item imgh2:hover {
-  color: #168124;
-}
-
-.container-transicion {
-  position: relative;
 }
 
 /* Sección Portafolio */
 #portafolio {
-  padding-top: 65px;
+  padding-top: 85px;
+}
+
+.mis-margenes {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .ta_1 {
