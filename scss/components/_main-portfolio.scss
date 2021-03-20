@@ -4,9 +4,10 @@
 }
 
 .mis-margenes {
-    @include margenes;
+    @include paddings;
 }
 
-.ta_1 {
-    width: 250px;
+img.ta_1 {
+    height: 150px;
+    width: 150px;
 }

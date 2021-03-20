@@ -4,7 +4,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
 }
 
 /* Font Family Roboto */
@@ -20,8 +19,8 @@ body {
   color: black;
 }
 body p {
-  margin-left: 40px;
-  margin-right: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* Main: Video */
@@ -55,14 +54,21 @@ body p {
 #quienes, #filosofia {
   padding-top: 55px;
   background-color: #acdeaa;
-  margin-left: 40px;
-  margin-right: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* Main: Servicios */
 .mi-container {
-  margin-left: 40px;
-  margin-right: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.ta-2 {
+  height: 150px;
+  width: 150px;
+  margin: 10px auto;
+  display: block;
 }
 
 #servicios {
@@ -75,12 +81,13 @@ body p {
 }
 
 .mis-margenes {
-  margin-left: 40px;
-  margin-right: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.ta_1 {
-  width: 250px;
+img.ta_1 {
+  height: 150px;
+  width: 150px;
 }
 
 /* Main: Formulario Breve */
