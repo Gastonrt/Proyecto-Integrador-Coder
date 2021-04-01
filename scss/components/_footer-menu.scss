@@ -1,6 +1,7 @@
 /* Footer: Menú Nav Flex */
 footer {
     section {
+        background-color: white;
 
         .contenedor-menu-2 {
             display: $flex-box;
@@ -14,21 +15,26 @@ footer {
 
                 nav {
                     display: $flex-box;
+                    justify-content: space-around;
 
                     ul {
                         display: $flex-box;
                         flex-wrap: wrap;
+                        justify-content: space-around;
 
                         li {
                             display: $flex-box;
+                            justify-content: space-around;
+                            justify-items: center;
                             list-style-type: none;
 
                             a {
-                                color: white;
+                                display: $flex-box;
+                                color: rgb(194, 179, 179);
                                 text-decoration: none;
                                 margin-left: 20px;
                                 text-align: center;
-                                justify-content: center;
+                                justify-content: space-around;
                                 align-content: center;
 
                                 &:hover {

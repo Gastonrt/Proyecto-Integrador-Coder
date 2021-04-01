@@ -2,18 +2,20 @@
 @import "../base/reseteo";
 @import "../base/variables";
 @import "../base/fonts";
+@import "../base/root";
 // * MIXINS
 @import "../base/mixins";
 
 /* COMPONENTS */
 @import "../components/body";
+
+@import "../components/presentacion";
 @import "../components/main-video";
 @import "../components/main-quienes";
 @import "../components/main-servicios";
 @import "../components/main-portfolio";
 @import "../components/main-form";
-@import "../components/main-qr-insta";
-@import "../components/main-iframe-maps";
+@import "../components/main-integrated";
 @import "../components/footer-social-media";
 @import "../components/footer-menu";
 

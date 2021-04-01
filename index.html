@@ -2,8 +2,7 @@
 <html lang="es">
 
 <head>
-    <!-- Versión 1.6 Mejorada con Animaciones, Grids, y Bootstrap en el Nav, Responsive -->
-    <!-- Ver 1.6 Fecha: 18/03/2021 * -->
+    <!-- Ver 1.6 Fecha: 01/04/2021 * -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +30,7 @@
     <!-- CSS de Bootstrap externo -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
     <!-- CSS Propio interno de la carpeta CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Tamaño máximo es de 70 de caracteres y la palabra clave debe estar al
@@ -57,8 +57,8 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#quienes">¿Quiénes Somos?</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#filosofia">Filosofía</a>
+                        <li class="nav-item ocultarquery">
+                            <a class="nav-link ocultarquery" href="#filosofia">Filosofía</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -91,9 +91,22 @@
                 </div>
             </div>
         </nav>
-
         <!-- Fin Sección del Menu Nav con Bootstrap JS -->
+        <div class="container">
+            <div class="presentacion__container">
 
+                <div class="presentacion__textos">
+                    <h1 class="presentacion__titulos">Prestamos servicios
+                        <span class="hovermouse">digitales</span>
+                        para todos los consumidores, emprendedores, y clientes en general.</h1>
+                    <p class="presentacion__copy">Estamos en Capital Federal.</p>
+                    <a href="#" class="btn btn-primary">Quiero saber más.</a>
+                </div>
+
+                <img src="./images/varios1.svg" class="presentacion__img">
+
+            </div>
+        </div>
 
     </header>
     <!-- Fin del Header -->
@@ -101,106 +114,138 @@
     <!-- Comienzo de Main -->
     <main>
 
-        <!-- Video MP4 -->
-        <section>
-            <div class="container mi-contenedor">
-                <div class="flex-item-a">
-                    <video src="./videos/tallerazul.mp4" controls="controls" class="video2"></video>
-                    <div class="flex-item-b">
-                        <p>Branding de Marca para Tallerazul cliente actual 2021.</p>
+        <!-- Identidad, Quienes Somos, Filosofía -->
+        <section id="quienes">
+            <div class="contenedor-identidad">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h2>Quienes Somos</h2>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Somos una marca que brinda Productos & Servicios, tanto
+                            para clientes B2B como así también a B2C. Contamos con un diferencial que nos
+                            destaca para acompañar 100% a los usuarios desde el principio de su
+                            Emprendimiento / Proyecto / Cuenta Personal.</h2>
+                        <p class="card-text">¿Estás preparado para conocer este mundo?</p>
+                        <a href="#" class="btn btn-primary">Quiero saber más</a>
+                    </div>
+                    <div class="container card-footer text-muted ocultarquery">
+                        <div class="container">
+                            <h2 id="filosofia" class="tituloquienes">¿Cómo se aborda un trabajo desde Contenidos.Avapor?
+                            </h2>
+                        </div>
+                        <div class="container hexagonquienes">
+                            <ul id="categories" class="clr">
+                                <li class="pusher"></li>
+                                <li>
+                                    <div>
+                                        <img src="./modal_img/libro.jpg" alt="" />
+                                        <h2>Avance</h2>
+                                        <p>Planificación y estructuras.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./modal_img/comp.jpg" alt="" />
+                                        <h2>Estamos Listos!</h2>
+                                        <p>Puesta en marcha y apoyo constante.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./images/idea.jpg" alt="" />
+                                        <h2>Ideas</h2>
+                                        <p>Comienzo de un proyecto.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
         </section>
 
-        <!-- Identidad, Quienes Somos, Filosofía -->
+        <!-- Sección Servicios con Logos & Transicion / Animación -->
         <section>
-            <div class="contenedor-identidad">
-                <div>
-                    <h1 id="quienes">Quienes Somos</h1>
-                    <p>Somos una marca que brinda Productos & Servicios, tanto para clientes B2B
-                        como así también a B2C. Contamos con un diferencial que nos destaca para
-                        acompañar 100% a los usuarios desde el principio de su Emprendimiento / Proyecto
-                        / Cuenta Personal.</p>
-                </div>
-                <div>
-                    <h2 id="filosofia">Filosofía</h2>
-                    <p>Valores como: Honestidad, Calidad, y Excelencia; son tan intrínsecos en
-                        nuestra marca como en las personas que conforman Contenidos Avapor. La Filosoía
-                        de la marca es hacer posible que esa combinación de valores y actitudes estén
-                        tan vigentes como las necesidades de todos nuestros clientes, ayer, hoy, y
-                        "Siempre para adelante". 100% Actitud.</p>
+            <div class="mi-container">
+                <h2 id="servicios">Servicios que ofrecemos</h2>
+                <div class="card-group">
+                    <div class="card">
+                        <img src="./images/marketing_digital2.png" class="card-img-top ta-2 caja1"
+                            alt="Marketing Digital">
+                        <div class="card-body">
+                            <h3 class="card-title">Marketing Digital</h3>
+                            <p class="card-text">Atendemos el foco de tu negocio o emprendimiento.
+                                Realizamos estudios FODA, arquetipo de clientes, plan de marketing digital,
+                                calendario de publicaciones, y encaramos estrategias para la promoción de su
+                                negocio en las redes sociales.</p>
+                            <p class="card-text">
+                                <small class="text-muted">Servicio especial para potenciar tu negocio.</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/gestion_redes2.png" class="card-img-top img-fluid ta-2 caja2"
+                            alt="Redes Sociales">
+                        <div class="card-body">
+                            <h3 class="card-title">Redes Sociales</h3>
+                            <p class="card-text">Somos expertos en redes sociales. Administramos cuentas,
+                                realizamos seguimientos, monitoreamos anomalías y analizamos cada plus de valor
+                                de su emprendimiento: tales son sus seguidores, demografía, y todo dato de KPI
+                                de valor para usted y la empresa.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">Servicio exclusivo para optimizar y manejar los
+                                    tiempos con clientes, interacciones, análisis.</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/desarrollo_web2.png" class="card-img-top img-fluid ta-2 caja3"
+                            alt="Desarrollo Web">
+                        <div class="card-body">
+                            <h3 class="card-title">Diseño Web</h3>
+                            <p class="card-text">Ahora también ofrecemos Desarrollo Web. Gestión de sitios.
+                                Realizamos peticiones de dominio .AR y .COM.AR en organismo oficial NIC.
+                                Mantenimiento Web. Usamos código HTML5 + CSS3. Presupuestos a medida.</p>
+                            <p class="card-text">
+                                <small class="text-muted">Servicio para tener presencia en la Web / Internet.</small>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-
-        <!-- Sección Servicios con Logos & Transicion / Animación -->
-        <section id="servicios" class="titulo-servicios">
-            <div class="mi-container">
-                <div class="card-group">
-                    <div class="card">
-                        <img src="./images/marketing_digital2.png" class="card-img-top ta-2 caja1" alt="Marketing Digital">
-                        <div class="card-body">
-                            <h5 class="card-title">Marketing Digital</h5>
-                            <p class="card-text">Atendemos el foco de tu negocio o emprendimiento. Realizamos estudios FODA,
-                                arquetipo de clientes, plan de marketing digital, calendario de publicaciones, y encaramos
-                                estrategias para la promoción de su negocio en las redes sociales.</p>
-                            <p class="card-text"><small class="text-muted">Servicio especial para potenciar tu
-                                    negocio.</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                    <img src="./images/gestion_redes2.png" class="card-img-top img-fluid ta-2 caja2" alt="Redes Sociales">
-                    <div class="card-body">
-                        <h5 class="card-title">Redes Sociales</h5>
-                        <p class="card-text">Somos expertos en redes sociales. Administramos cuentas, realizamos
-                            seguimientos, monitoreamos anomalías y analizamos cada plus de valor de su emprendimiento:
-                            tales son sus seguidores, demografía, y todo dato de KPI de valor para usted y la empresa.
-                        </p>
-                        <p class="card-text"><small class="text-muted">Servicio exclusivo para optimizar y manejar los
-                                    tiempos con clientes, interacciones, análisis.</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./images/desarrollo_web2.png" class="card-img-top img-fluid ta-2 caja3" alt="Desarrollo Web">
-                        <div class="card-body">
-                            <h5 class="card-title">Diseño Web</h5>
-                            <p class="card-text">Ahora también ofrecemos Desarrollo Web. Gestión de sitios. Realizamos
-                                peticiones de dominio .AR y .COM.AR en organismo oficial NIC. Mantenimiento Web. Usamos
-                                código HTML5 + CSS3. Presupuestos a medida.</p>
-                            <p class="card-text"><small class="text-muted">Servicio para tener presencia en la Web /
-                                    Internet.</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </section>
-
         <!-- Sección de Portafolio -->
         <section id="portafolio">
+            <h3>Algunos de nuestros clientes</h3>
             <!-- Acordion de Bootsrap -->
-            <div class="container mis-margenes">
+            <div class="container">
                 <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Cliente: Tallerazul - Castelar Sur.
-                            </button>
 
+                    <div class="accordion-item">
+                        <h2 class="accordion-header center-text-align" id="headingOne">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Cliente: Tallerazul - Castelar Sur - Video Presentación 2021
+                            </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Febrero, Marzo de 2021. Servicios de Community Manager. Plan de Marketing Digital.
-                                Calendario de Publicaciones. Análisis FODA. Análisis de Producto. Análisis de la
-                                Competencia. <div><img src="./portafolio/ta_1.png" alt="Tallerazul 2021" class="ta_1">
+                                <div>
+                                    <video src="./videos/tallerazul.mp4" controls="controls" class="video2"></video>
+                                    <p>Febrero, Marzo de 2021. Servicios de Community Manager. Plan de Marketing
+                                        Digital. Calendario de Publicaciones. Análisis FODA. Análisis de Producto.
+                                        Análisis de la Competencia.</p>
                                 </div>
-                                <div><a href="https://www.instagram.com/tallerazulp/" target="_blank">Instagram</a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
+
+
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -213,11 +258,13 @@
                             <div class="accordion-body">
                                 Diseño de Flyer para publicidad en redes sociales, WhatsApp Business.
                                 <div><img src="./portafolio/2.png" alt="Minifletes On Line 2021" class="ta_1"></div>
-                                <div><a href="https://www.instagram.com/minifletes.online/"
-                                        target="_blank">Instagram</a></div>
+                                <div>
+                                    <a href="https://www.instagram.com/minifletes.online/" target="_blank">Instagram</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -229,16 +276,15 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 Año 2021. Community Manager. Creador Digital. Creador de Contenidos.
-                                <div><img src="./portafolio/3.png" alt="Estetica Ninfas"
-                                        class="ta_1"></div>
-                                <div><a href="https://www.instagram.com/estetica_ninfas/"
-                                        target="_blank">Instagram</a></div>
+                                <div><img src="./portafolio/3.png" alt="Estetica Ninfas" class="ta_1"></div>
+                                <div>
+                                    <a href="https://www.instagram.com/estetica_ninfas/" target="_blank">Instagram</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
 
         </section>
 
@@ -269,22 +315,15 @@
                 </div>
         </section>
 
-        <!-- Sección de Qr de contacto Instagram -->
-        <section class="qr-background">
-            <div>
-                <img src="./social_media_icons/contenidos.avapor_nametag.png" alt="Qr Instagram" class="qr-insta">
-            </div>
-        </section>
-
         <!-- Sección de Iframe de Google Maps -->
-        <section>
-            <div class="contenedor-mapa">
-                <iframe class="Google-Maps"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.044017701939!2d-58.44566669145797!3d-34.60754620636289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1189c237db%3A0x7d00b48da5073e21!2sCid%20Campeador!5e0!3m2!1ses!2sar!4v1610960918914!5m2!1ses!2sar"
-                    width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
-                <p>Caballito, CABA 1405, Argentina</p>
-            </div>
+
+        <div class="contenedor-mapa">
+            <iframe class="Google-Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.044017701939!2d-58.44566669145797!3d-34.60754620636289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1189c237db%3A0x7d00b48da5073e21!2sCid%20Campeador!5e0!3m2!1ses!2sar!4v1610960918914!5m2!1ses!2sar"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            <p>Caballito, CABA 1405, Argentina</p>
+        </div>
 
         </section>
 
@@ -295,38 +334,6 @@
     <!-- Inicio del Footer -->
 
     <footer>
-        <!-- Sección del Menu de Footer -->
-        <section>
-            <div class="contenedor-menu-2">
-                <div class="listado-menu2">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="#quienes">Quienes Somos</a>
-                            </li>
-                            <li>
-                                <a href="#filosofia">Filosofia</a>
-                            </li>
-                            <li>
-                                <a href="#servicios">Servicios</a>
-                            </li>
-                            <li>
-                                <a href="#portafolio">Portafolio</a>
-                            </li>
-                            <li>
-                                <a href="#contacto-form">Deja tus datos</a>
-                            </li>
-                            <li>
-                                <a href="#redes-sociales">Redes Sociales</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </section>
 
         <!-- Sección de Grid BootStrap para Redes Sociales Iconos -->
         <div class="container" id="redes-sociales">
@@ -350,6 +357,39 @@
             </div>
         </div>
 
+        <!-- Sección del Menu de Footer -->
+        <section class="ocultarquery">
+            <div class="contenedor-menu-2">
+                <div class="listado-menu2">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#quienes">Quienes Somos</a>
+                            </li>
+                            <li class="ocultarquery">
+                                <a href="#filosofia" class="ocultarquery">Filosofia</a>
+                            </li>
+                            <li>
+                                <a href="#servicios">Servicios</a>
+                            </li>
+                            <li>
+                                <a href="#portafolio">Portafolio</a>
+                            </li>
+                            <li>
+                                <a href="#contacto-form">Deja tus datos</a>
+                            </li>
+                            <li>
+                                <a href="#redes-sociales">Redes Sociales</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
         <!-- Sección de Todos los Derechos Reservados -->
         <section>
             <div class="contenedor-footer-ca">
@@ -366,6 +406,9 @@
     </footer>
     <!-- Fin del Footer -->
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <!-- <script
                 src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
@@ -380,6 +423,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
         integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
     </script>
+
+    >
 
 </body>
 

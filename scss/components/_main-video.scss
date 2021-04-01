@@ -1,28 +1,6 @@
 /* Main: Video */
 
-.mi-contenedor {
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:stretch;
-    align-content:center;
-    height:100vh;
-}
-
-
-.flex-item-a > .video2 {
-    order:0;
-    flex:0 1 auto;
-    align-self:auto;
-    height:auto;
-    width:40%;
-    }
-
-.flex-item-b {
-    order:0;
-    flex:0 1 auto;
-    align-self:auto;
-    height:auto;
-    width:auto;
+.video2 {
+    width: auto;
+    height: 300px;
 }

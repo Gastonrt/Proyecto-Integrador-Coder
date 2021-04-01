@@ -2,161 +2,31 @@
 /*RESPONSIVE*/
 @media (min-width: 1199px) {
     .video2 {
-      margin-top: 6rem; } }
+      margin-top: 3rem; } 
+     }
   
 @media (min-width: 576px) and (max-width: 1199px) {
-    .navbar-expand-lg {
-      justify-content: center; }
-    section .carousel-index .carousel-item .carousel-texto {
-      text-align: center;
-      width: auto;
-      height: auto;
-      margin-bottom: auto;
-      padding: 2rem 3rem 2rem 3rem; }
-    .sobremi-index {
-      flex-direction: column;
-      max-width: 100%; }
-      .sobremi-index .sobremi-index-texto {
-        max-width: 100%;
-        margin-top: 1rem; }
-      .sobremi-index .col-md-8 {
-        flex: 0 0 100%;
-        max-width: 100%; }
-    .sobremi {
-      flex-direction: column;
-      max-width: 100%; }
-      .sobremi .sobremi-texto {
-        max-width: 100%;
-        margin-top: 1rem; }
-      .sobremi .col-md-8 {
-        flex: 0 0 100%;
-        max-width: 100%; }
-      .sobremi .sobremi-imagen {
-        max-width: 100%;
-        flex-direction: column; }
-    .servicios {
-      flex-direction: row;
-      flex-wrap: wrap;
-      max-width: 100%;
-      align-items: center; }
-    .galeria .card-body .overlay-portfolio:hover .card-title {
-      margin-top: 6rem;
-      margin-bottom: .2rem;
-      font-size: 1.1rem; } }
-  
-@media (max-width: 991px) {
-    .navbar-expand-lg {
-      justify-content: space-between; }
-    .navbar .navbar-nav .btn {
-      display: flex;
-      justify-content: start; }
-    section .carousel-index .carousel-item .carousel-texto {
-      height: auto;
-      margin-bottom: auto;
-      padding: 2rem 3rem 2rem 3rem; }
-      section .carousel-index .carousel-item .carousel-texto p {
-        display: none; }
-    .container .ideas-index .card-deck {
-      flex-direction: column;
-      flex-wrap: wrap; }
-      .container .ideas-index .card-deck .col-sm-4 {
-        max-width: 100%;
-        max-height: auto; }
-    .combos .card-group .card-deck .card .overlay-index:hover .texto-combo-hover {
-      margin-top: 6rem; }
-    .row-habilidades {
-      flex-direction: column; }
-    .col-6-habilidades-right {
-      max-width: 100%; }
-    .col-4-habilidades-left {
-      max-width: 60%;
-      margin: auto; }
-    .press-online {
-      flex-direction: column !important;
-      align-items: center; }
-      .press-online .press-online-texto .card-press-online {
-        border-radius: 15px;
-        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2); }
-    .galeria .card-body .overlay-portfolio:hover .card-title {
-      margin-top: 0rem;
-      margin-bottom: .2rem;
-      font-size: 1.1rem; }
-    .galeria .card-body .overlay-portfolio:hover .card-text {
-      font-size: .8rem; }
-    .modal-cckonex .modal-body .texto-modal .number-two {
-      grid-row-start: 2;
-      grid-row-end: 3;
-      grid-column-start: 1;
-      grid-column-end: 2; }
-    .modal-cckonex .modal-body .texto-modal .text-two {
-      grid-row-start: 2;
-      grid-row-end: 3;
-      grid-column-start: 2;
-      grid-column-end: 3; }
-    .modal-cckonex .modal-body .texto-modal .number-three {
-      grid-row-start: 3;
-      grid-row-end: 4;
-      grid-column-start: 1;
-      grid-column-end: 2; }
-    .modal-cckonex .modal-body .texto-modal .text-three {
-      grid-row-start: 3;
-      grid-row-end: 4;
-      grid-column-start: 2;
-      grid-column-end: 3; } }
-  
-@media (min-width: 991px) {
-    .navbar-expand-lg {
-      justify-content: space-between; }
-    .combos .card-group .card-deck .card .overlay-index:hover .texto-combo-hover {
-      margin-top: 8rem; } }
-  
-@media (max-width: 767px) {
-    .bg-color {
-      position: absolute; }
-      .bg-color .navbar-expand-lg {
-        justify-content: center; }
-    .ideas-index .card-deck {
-      flex-direction: column; }
-      .ideas-index .card-deck .col-sm-4 {
-        margin-bottom: 1rem;
-        max-width: 100%; }
-    .combos .card-group .card-deck {
-      flex-direction: column;
-      max-width: 100%; }
-      .combos .card-group .card-deck .card {
-        margin-bottom: 1rem; }
-        .combos .card-group .card-deck .card .overlay-index:hover .texto-combo-hover {
-          margin-top: 15rem; }
-    .servicios {
-      flex-direction: column;
-      max-width: 100%;
-      align-items: center; }
-    .container-form .flex-form-contacto {
-      flex-wrap: wrap;
-      flex-direction: column; }
-    .habilidades-right .card-deck {
-      flex-direction: row; }
-    .galeria .card-body .overlay-portfolio:hover .card-title {
-      margin-top: 12rem;
-      margin-bottom: .2rem;
-      font-size: 2rem; }
-    .galeria .card-body .overlay-portfolio:hover .card-text {
-      font-size: 1.2rem; } }
+     .video2 {
+          margin-top: 3rem; } 
+             }
   
 @media (min-width: 768px) {
-    .sobremi-index .col-md-8 {
-      max-width: 100%; } }
+     .video2 {
+          margin-top: 3rem; } 
+              }
   
 @media (max-width: 576px) {
-    .row-habilidades .habilidades-right .card-deck .card-habilidades {
-      width: auto; }
-    .combos .card-group .card-deck {
-      flex-direction: column;
-      max-width: 100%; }
-      .combos .card-group .card-deck .card {
-        margin-bottom: 1rem; }
-        .combos .card-group .card-deck .card:hover .overlay-index:hover .texto-combo-hover {
-          margin-top: 8rem; }
-    .galeria .card-body .overlay-portfolio:hover .card-title {
-      margin-top: 12rem;
-      margin-bottom: .2rem; } }
+     .video2 {
+          margin-top: 3rem; } 
+         .ocultarquery {
+              display: none;
+         }
+
+         .categories {
+              display:none;
+         }
+
+         .presentacion__cta{
+          padding-top: -35px;
+      }
+     }
